@@ -694,7 +694,7 @@ private class Tests {
     static void testFieldToProperty() {
 
         String property = Utils.sObjects.fieldToProperty(Contact.FirstName.getDescribe().getSobjectField());
-        System.assertEquals('firstName', property);fffff
+        System.assertEquals('firstName', property);
     }
 
     @IsTest
