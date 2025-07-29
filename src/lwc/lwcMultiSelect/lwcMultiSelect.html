@@ -1,0 +1,19 @@
+<!-- Vertic Multi Select -->
+<template>
+    <div data-id="container">
+        <c-lwc-select
+            disabled={disabled}
+            label={label}
+            onchange={handleFieldChange}
+            options={unselectedOptions}
+            placeholder={getPlaceholder}
+            pseudo-required={required}
+            label-hidden={labelHidden}>
+        </c-lwc-select>
+        <div style="white-space: break-spaces; margin-top: 3pt;" if:false={pillsHidden}>
+            <template for:each={selectedOptions} for:index="index" for:item="option">
+                <lightning-pill class="pill-badge" key={option.value} data-value={option.value} label={option.label} onremove={handleRemove}></lightning-pill>
+            </template>
+        </div>
+    </div>
+</template>
