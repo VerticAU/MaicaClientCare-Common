@@ -1,4 +1,4 @@
-@RestResource(urlMapping='/*')
+@RestResource(urlMapping='/maica/*')
 //SECURED!
 global with sharing class RestService {
 
